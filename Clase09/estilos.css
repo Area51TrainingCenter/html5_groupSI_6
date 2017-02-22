@@ -14,13 +14,14 @@ div.contenedor {
 
 div.contenedor header {
 	width: 100%;
-	height: 37px;
+	/*height: 37px;*/
 	background-color: #373c3f;
 	position: relative;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 13px;
+	line-height: 37px;
 	color: #ebebeb;
-	padding-top:11px;
+	/*padding-top:11px;*/
 	padding-left: 19px;
 }
 
@@ -28,13 +29,15 @@ div.contenedor header div.boton-menu {
 /*		width:15px;
 	height:10px;*/
 	width: 37px;
-	height: 37px;
+	/*height: 37px;*/
+	line-height: 37px;
 	position: absolute;
 	top:0px;
 	right:0px;
-	padding: 13.5px 11px;
+	padding: 0px 0px;
+	text-align: center;
 	background-color: #202529;
-	font-size: 0;
+	font-size: 13px;
 }
 
 div.contenedor article.introduccion {
@@ -150,4 +153,26 @@ div.contenedor section.contenido h2 {
 div.contenedor section.contenido p {
 	color:#707070;
 	font-size: 13px;
+}
+
+@media screen and (min-width: 640px) {
+	div.contenedor header {
+		line-height: 74px;
+		font-size: 18px;
+	}
+
+	div.contenedor header div.boton-menu {
+		width: 74px;
+		line-height: 74px;
+	}
+}
+
+@media screen and (min-width: 980px) {
+	div.contenedor header div.boton-menu {
+		display: none
+	}
+
+	div.contenedor header span {
+		display: none;
+	}
 }
