@@ -25,6 +25,41 @@ div.contenedor header {
 	padding-left: 19px;
 }
 
+div.contenedor header nav {
+	display: none;
+	overflow: hidden
+}
+
+div.contenedor header nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none
+}
+
+div.contenedor header nav ul li {
+	float: left
+}
+
+div.contenedor header nav ul a {
+	display: inline-block;
+	padding: 10px 20px;
+}
+
+div.contenedor header nav ul a:link,
+div.contenedor header nav ul a:active,
+div.contenedor header nav ul a:visited {
+	color: #fff;
+	font-size: 12px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+div.contenedor header nav ul a:hover {
+	text-decoration: underline;
+}
+
+
+
 div.contenedor header div.boton-menu {
 /*		width:15px;
 	height:10px;*/
@@ -168,6 +203,10 @@ div.contenedor section.contenido p {
 }
 
 @media screen and (min-width: 980px) {
+	div.contenedor header nav {
+		display: block;
+	}
+
 	div.contenedor header div.boton-menu {
 		display: none
 	}
