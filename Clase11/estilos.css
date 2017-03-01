@@ -76,10 +76,10 @@ div.contenedor header div.boton-menu {
 }
 
 div.contenedor article.introduccion {
-	height: 175px;
 	background-color: #0a9bb2;
 	padding-top:58px;
 	padding-left: 27px;
+	padding-bottom: 52px;
 }
 
 div.contenedor article.introduccion h2 {
@@ -206,6 +206,25 @@ div.contenedor section.contenido p {
 		width: 74px;
 		line-height: 74px;
 	}
+
+	div.contenedor article.introduccion {
+		padding-top: 114px;
+		padding-bottom: 112px;
+		padding-left:53px;
+	}
+
+	div.contenedor article.introduccion h2 {
+		font-size: 30px;
+	}
+
+	div.contenedor article.introduccion h3 {
+		font-size: 16px
+	}
+
+	div.contenedor article.introduccion div {
+		width: 333px
+	}
+
 }
 
 @media screen and (min-width: 640px) {
