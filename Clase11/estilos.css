@@ -197,10 +197,6 @@ div.contenedor section.contenido p {
 
 
 @media screen and (min-width: 550px) {
-	div.contenedor section.imagen01 {
-		/*height: 550px*/
-	}
-
 	div.contenedor header {
 		line-height: 74px;
 		font-size: 18px;
@@ -232,5 +228,12 @@ div.contenedor section.contenido p {
 
 	div.contenedor header span {
 		display: none;
+	}
+}
+
+@media screen and (min-width:1024px) {
+	div.contenedor {
+		width:1024px;
+		margin: 0 auto 30px auto
 	}
 }
