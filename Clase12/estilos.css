@@ -1,0 +1,273 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: 'Montserrat';
+}
+
+div.contenedor {
+	width: 100%;
+}
+
+div.contenedor header {
+	width: 100%;
+	/*height: 37px;*/
+	background-color: #373c3f;
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 13px;
+	line-height: 37px;
+	color: #ebebeb;
+	/*padding-top:11px;*/
+	padding-left: 19px;
+}
+
+div.contenedor header nav {
+	display: none;
+	overflow: hidden
+}
+
+div.contenedor header nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none
+}
+
+div.contenedor header nav ul li {
+	float: left
+}
+
+div.contenedor header nav ul a {
+	display: inline-block;
+	padding: 10px 20px;
+}
+
+div.contenedor header nav ul a:link,
+div.contenedor header nav ul a:active,
+div.contenedor header nav ul a:visited {
+	color: #fff;
+	font-size: 12px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+div.contenedor header nav ul a:hover {
+	text-decoration: underline;
+}
+
+
+
+div.contenedor header div.boton-menu {
+/*		width:15px;
+	height:10px;*/
+	width: 37px;
+	/*height: 37px;*/
+	line-height: 37px;
+	position: absolute;
+	top:0px;
+	right:0px;
+	padding: 0px 0px;
+	text-align: center;
+	background-color: #202529;
+	font-size: 13px;
+}
+
+div.contenedor article.introduccion {
+	background-color: #0a9bb2;
+	padding-top:58px;
+	padding-left: 27px;
+	padding-bottom: 52px;
+}
+
+div.contenedor article.introduccion h2 {
+	font-size: 16px;
+	color: #fff;
+	margin:0;
+	font-weight: normal;
+}
+
+
+div.contenedor article.introduccion div {
+	margin-top:15px;
+	width: 175px;
+	overflow: hidden;
+}
+
+div.contenedor article.introduccion h3 {
+	float:left;
+	font-size: 10px;
+	color: #c1dce4;
+	margin: 0;
+	font-weight: normal;
+}
+
+div.contenedor article.introduccion img {
+	float:right;
+}
+
+div.contenedor article.mensaje {
+	width: 69.72222222222222%;
+	height: 76px;
+	background-color: #27212c;
+	float: left;
+	color: #9282a0;
+	font-size: 9px;
+	padding-top:30px;
+	padding-left: 30px
+}
+
+div.contenedor article.flecha {
+	width: 30.27777777777778%;
+	height: 76px;
+	background-color: #bc3183;
+	float: left;
+	position: relative;
+
+}
+
+div.contenedor article.flecha img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -7.5px;
+	margin-top: -12.5px;
+}
+
+div.contenedor section.imagen01 {
+	width:100%;
+	background-color: #5b0fa1;
+	clear: both;
+	position: relative;
+	/*font-size:0;*/
+}
+
+div.contenedor section.imagen01 img.flecha-grande {
+	position:absolute;
+	left: 50%;
+	top:50%;
+	margin-left:-16px;
+	margin-top: -9.5px; 
+}
+
+/*div.contenedor section.imagen01 img.flecha-fondo {
+	width:100%;
+	max-width: 640px;
+}*/
+
+div.contenedor section.imagen02 {
+	width:100%;
+	/*font-size: 0*/
+}
+
+div.contenedor section.imagen02 img {
+	width:100%;
+	max-width: 640px;
+}
+
+div.contenedor section.imagen03 {
+	width:100%;
+	/*font-size: 0*/
+}
+
+div.contenedor section.imagen03 img {
+	width:100%;
+	max-width: 640px;
+}
+
+div.contenedor section.contenido {
+	width: 100%;
+	padding: 35px 37px 48px 35px;
+	background-color: #ebebeb
+}
+
+div.contenedor section.contenido h2 {
+	margin: 0;
+	color: #088ca5;
+	font-size: 15px;
+	margin-bottom: 26px;
+}
+
+div.contenedor section.contenido p {
+	color:#707070;
+	font-size: 13px;
+}
+
+
+@media screen and (min-width: 550px) {
+	div.contenedor header {
+		line-height: 74px;
+		font-size: 18px;
+	}
+
+	div.contenedor header div.boton-menu {
+		width: 74px;
+		line-height: 74px;
+	}
+
+	div.contenedor article.introduccion {
+		padding-top: 114px;
+		padding-bottom: 112px;
+		padding-left:53px;
+	}
+
+	div.contenedor article.introduccion h2 {
+		font-size: 30px;
+	}
+
+	div.contenedor article.introduccion h3 {
+		font-size: 16px
+	}
+
+	div.contenedor article.introduccion div {
+		width: 333px
+	}
+
+}
+
+@media screen and (min-width: 640px) {
+	div.contenedor section.imagen01, 
+	div.contenedor section.imagen02,
+	div.contenedor section.imagen03 {
+		float: left;
+		width: 33.33333333334%;
+	}
+
+	div.contenedor section.imagen01 div,
+	div.contenedor section.imagen02 img,
+	div.contenedor section.imagen03 img {
+		width: auto;
+		height: 18em;
+	}
+}
+
+@media screen and (min-width: 980px) {
+	div.contenedor header nav {
+		display: block;
+	}
+
+	div.contenedor header div.boton-menu {
+		display: none
+	}
+
+	div.contenedor header span {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 1010px) {
+	div.contenedor section.imagen01 div,
+	div.contenedor section.imagen02 img,
+	div.contenedor section.imagen03 img {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width:1024px) {
+	div.contenedor {
+		width:1024px;
+		margin: 0 auto 30px auto
+	}
+}
