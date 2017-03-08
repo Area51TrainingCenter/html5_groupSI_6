@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<article>
+	<span class="texto">Texto del span</span>
+</article>
+
+<div class="item rojo"></div>
+<div class="item verde"></div>
+<div class="item azul"></div>
+
+<script src="jquery-3.1.1.js"></script>
+<script>
+	// Leer el contenido de la etiqueta "span.texto"
+	var contenido = $(".texto").html()
+
+	// Escribe el contenido de la línea anterior en las etiquetas "div"
+	$("div").html(contenido)
+
+	// Colorea los textos según el nombre de la clase
+	$("div.rojo").css("color","red")
+	$(".verde").css("color","green")
+	$("div.item.azul").css("color", "blue")
+</script>
+
+</body>
+</html>

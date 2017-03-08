@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<article></article>
+
+<div>Texto del div</div>
+
+<script src="jquery-3.1.1.js"></script>
+<script>
+	// La función "html" modifica el contenido de una etiqueta, en este caso de la etiqueta "article"
+	$("article").html("Texto dentro de la etiqueta article")
+
+	// Éstas dos líneas hacen lo mismo que la línea anterior
+	var contenido = "Texto dentro de la etiqueta article"
+	$("article").html(contenido)
+
+	var textoDiv = $("div").html()
+	console.log(textoDiv)
+</script>
+
+</body>
+</html>

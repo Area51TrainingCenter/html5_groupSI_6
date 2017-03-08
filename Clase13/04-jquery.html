@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<div>Texto</div>
+
+<article>
+	<span>Texto del primer span</span>
+</article>
+
+<span class="segundo">Texto del segundo span</span>
+
+<script src="jquery-3.1.1.js"></script>
+<script>
+	// Aquí se selecciona el elemento "div"
+	var seleccionado = $("div")
+
+	// Aquí usamos la función (o fábrica) "css" para cambiar el valor de la propiedad "color" a "red"
+	seleccionado.css("color", "red")
+
+	$("div").css("color", "red") // Se simplificaron las dos instrucciones anteriores
+	$("div").css("font-size", "80px")
+
+	$("article span").css("text-transform", "uppercase") //cambia solo el span que está dentro de un article
+
+	$(".segundo").css("text-transform", "capitalize")
+	// $("span.segundo").css("text-transform", "capitalize") // es igual que la línea anterior
+
+
+</script>
+
+</body>
+</html>
