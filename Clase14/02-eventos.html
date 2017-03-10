@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf8">
+	<style>
+		div.cuadrado {
+			background-color: red;
+			width: 200px;
+			height: 200px;
+			transition: border-radius 400ms;
+		}
+	</style>
+</head>
+<body>
+<!-- Dos formas de crear botones -->
+<button>Presióname</button>
+<input type="button" value="Presióname a mi">
+
+<div class="cuadrado"></div>
+
+<!-- <script src="jquery-3.1.1.js"></script> -->
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script> 
+
+
+
+<script>
+	$(function(){
+
+		// 1. Seleccionar el elemento: $("button")
+		// 2. Utilizar la función de eventos:  on
+		// 3. La función "on" tiene dos argumentos:
+		//     3.1 Nombre del evento: "click"
+		//     3.2 Lo que se hace cuando sucede el evento:
+		//          function(){
+		//                  Aquí va la programación
+		//          }
+
+		$("button").on("click", function(){
+			console.log("Sergio")
+		})
+
+
+        $("input").on("click", function(){
+        	$("body").css("background-color", "yellow")
+        	$("div.cuadrado").css("border-radius", "50%")
+        })
+
+
+
+
+
+	})
+
+
+</script>
+
+</body>
+</html>
