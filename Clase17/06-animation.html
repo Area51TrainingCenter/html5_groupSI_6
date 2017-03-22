@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		div {
+			width: 300px;
+			height: 300px;
+			background-color: red;
+			animation: cambiarColores 3s;
+		}
+
+		article {
+			width: 400px;
+			height: 300px;
+			background-color: grey;
+			animation: cambiarColores 20s;
+			border-radius: 50%
+		}
+
+		@keyframes cambiarColores {
+			0% {
+				background-color: purple
+			}
+
+			20% {
+				background-color: blue
+			}
+
+			80% {
+				background-color: blue;
+			}
+
+			100% {
+				background-color: yellow
+			}
+/*			from {
+				background-color: purple
+			}
+
+			to {
+				background-color: yellow
+			}*/
+		}
+	</style>
+</head>
+<body>
+
+<div></div>
+
+<article></article>
+
+</body>
+</html>
