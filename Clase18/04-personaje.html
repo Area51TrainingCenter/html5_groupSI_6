@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		body {
+			background-color: black
+		}
+		div {
+			width: 120px;
+			height: 182px;
+			background-image: url(img/personaje.png);
+			border: 1px solid red;
+			animation: cambiar 1s steps(8) infinite, avanzar 7s infinite linear;
+		}
+
+		@keyframes cambiar {
+
+			100% {
+				background-position: -960px 0px
+			}
+		}
+
+		@keyframes avanzar {
+			100% {
+				transform: translateX(850px);
+			}
+		}
+
+
+
+	</style>
+</head>
+<body>
+
+<img src="img/personaje.png">
+
+<div></div>
+
+</body>
+</html>
