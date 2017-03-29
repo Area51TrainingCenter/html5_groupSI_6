@@ -3,17 +3,25 @@
 <head>
 	<title></title>
 	<style>
-	body {
-		perspective: 2000px
+	section {
+		perspective: 4000px
 	}
 		article {
 			margin:20px auto;
 			width:304px;
 			height: 450px;
 			position: relative;
+			transition: all 1s linear;
+			transform-style: preserve-3d;
+		}
+
+		article:hover {
+			transform: rotateY(-78deg);
 		}
 
 		div.poster, div.detalle {
+			width: 304px;
+			height: 450px;
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -22,19 +30,27 @@
 
 		div.detalle {
 			background-color: blue;
-			transform: rotateY(90deg)
+			transform: rotateY(90deg) translateZ(152px) translateX(152px)
+		}
+
+		section {
+			width:400px;
+			height: 500px;
+			margin:20px auto;
+			background-color: red;
 		}
 	</style>
 
 </head>
 <body>
-
-	<article>
-		<div class="poster">
-			<img src="logan.jpg">
-		</div>
-		<div class="detalle"></div>
-	</article>
+	<section>
+		<article>
+			<div class="poster">
+				<img src="logan.jpg">
+			</div>
+			<div class="detalle"></div>
+		</article>
+	</section>
 
 </body>
 </html>
