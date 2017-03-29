@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+	    body {
+	    	perspective: 3000px
+	    }
+
+	    article {
+	    	width: 400px;
+	    	height: 400px;
+	    	margin: 20px auto;
+	    	position: relative;
+	    	transition: all 10s linear;
+	    	transform-style: preserve-3d;
+	    	background-color: green;
+	    }
+		div {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 400px;
+			height: 400px;
+			background-size: cover;
+	    	backface-visibility: hidden;
+		}
+
+		div:nth-child(1) {
+			background-image: url(gato.jpg);
+			transform: translateZ(-200px) rotateY(180deg);
+		}
+
+		div:nth-child(2) {
+			background-image: url(gato2.jpg);
+			transform: translateZ(200px);
+		}
+
+		div:nth-child(3) {
+			background-image: url(gato3.jpg);
+			transform: rotateY(-90deg) translateZ(200px)
+		}
+
+		div:nth-child(4) {
+			background-image: url(gato2.jpg);
+			transform: rotateY(90deg) translateZ(200px)
+		}
+
+		div:nth-child(5) {
+			background-image: url(gato.jpg);
+			transform: rotateX(-90deg) translateZ(200px);
+		}
+
+		div:nth-child(6) {
+			background-image: url(gato2.jpg);
+			transform: rotateX(90deg) translateZ(200px);
+		}
+
+		article:hover {
+			transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+		}
+	</style>
+</head>
+<body>
+	<article>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</article>
+	
+
+</body>
+</html>

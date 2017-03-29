@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+	body {
+		perspective: 2000px
+	}
+		article {
+			margin:20px auto;
+			width:304px;
+			height: 450px;
+			position: relative;
+		}
+
+		div.poster, div.detalle {
+			position: absolute;
+			top: 0;
+			left: 0;
+			backface-visibility: hidden;
+		}
+
+		div.detalle {
+			background-color: blue;
+			transform: rotateY(90deg)
+		}
+	</style>
+
+</head>
+<body>
+
+	<article>
+		<div class="poster">
+			<img src="logan.jpg">
+		</div>
+		<div class="detalle"></div>
+	</article>
+
+</body>
+</html>
