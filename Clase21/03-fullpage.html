@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="jquery.fullpage.css">
+	<style>
+		.seccion1{background-image: url(playa01.jpg);background-size:cover;}
+		.seccion2{background-image: url(playa02.jpg);background-size:cover;}
+		.seccion3{background-image: url(playa03.jpg);background-size:cover;}
+		.seccion4{background-image: url(playa04.jpg);background-size:cover;}
+
+		h2 {
+			font-family: Verdana;
+			font-weight: bold;
+			font-size: 50px;
+			text-align: center;
+			color:white;
+			text-shadow:5px 5px 10px black;
+		}
+
+		nav {
+			position: fixed;
+			top: 0;
+			left:0;
+			z-index: 10000;
+			font-size:30px;
+		}
+	</style>
+</head> 
+<body>
+
+
+<nav>
+	<ul>
+		<li><a href="#pag1">Página1</a></li>
+		<li><a href="#pag2">Página2</a></li>
+		<li><a href="#pag3">Página3</a></li>
+		<li><a href="#pag4">Página4</a></li>
+	</ul>
+</nav>
+
+<div id="fullpage">
+	<div class="section seccion1">
+		<h2>Playa 01</h2>
+	</div>
+	<div class="section seccion2">
+		<div class="slide"><h2>Slide 01</h2></div>
+		<div class="slide"><h2>Slide 02</h2></div>
+		<div class="slide"><h2>Slide 03</h2></div>
+		<div class="slide"><h2>Slide 04</h2></div>
+		<div class="slide"><h2>Slide 05</h2></div>
+	</div>
+	<div class="section seccion3 fp-auto-height">
+		<h2>Playa 03</h2>
+	</div>
+	<div class="section seccion4">
+		<h2>Playa 04</h2>
+	</div>
+</div>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="jquery.fullpage.js"></script>
+<script>
+	$(function(){
+
+		$("#fullpage").fullpage({
+			anchors: ["pag1", "pag2", "pag3", "pag4"]
+		})
+
+
+	})
+</script>
+
+
+
+
+</body>
+</html>
