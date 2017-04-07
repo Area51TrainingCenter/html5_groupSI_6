@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,max-scale=1">
+	<style>
+		input::-webkit-input-placeholder {
+		  color: #1d7b97;
+		  font-family:Verdana, sans-serif;
+		}
+		input:-moz-placeholder {
+		  color: #1d7b97;
+		  font-family:Verdana, sans-serif;
+		}
+		input::-moz-placeholder {
+		  color: #1d7b97;
+		  font-family:Verdana, sans-serif;
+		}
+		input:-ms-input-placeholder {
+		  color: #1d7b97;
+		  font-family:Verdana, sans-serif;
+		}
+
+
+
+		input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		  color: #1e1e1e;
+		}
+		input::-moz-placeholder { /* Firefox 19+ */
+		  color: #1e1e1e;
+		}
+		input:-ms-input-placeholder { /* IE 10+ */
+		  color: #1e1e1e;
+		}
+		input:-moz-placeholder { /* Firefox 18- */
+		  color: #1e1e1e;
+		}
+	</style>
+</head>
+<body>
+
+<form>
+	<input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" value="Sergio Hidalgo" /><br>
+	<input type="password" name="contrasena" id="contrasena" / placeholder="Ingrese su correo"><br>
+	<input type="date" name="fecha" id="fecha"/><br>
+	<input type="email" name="correo" id="correo" placeholder="Ingrese su correo" /><br>
+	<input type="number" name="hijos" id="hijos"/><br>
+	<input type="color" name="color" id="color"/><br>
+	<input type="range" min="10" max="100" name="rango" id="rango"/><br>
+	<select name="estado" id="estado">
+		<option value="1">Casado</option>
+		<option value="2">Soltero</option>
+		<option value="3">Divorciado</option>
+		<option value="4">Viudo</option>
+	</select>
+	<input type="checkbox" name="acepto" id="acepto">
+	<label for="acepto">Acepto los términos</label>
+	<input type="radio" name="sexo" id="hombre"><label for="hombre">Hombre</label>
+	<input type="radio" name="sexo" id="mujer"><label for="mujer">Mujer</label>
+	<br>
+	<input type="file" name="archivo" id="archivo"><br>
+	<input type="button" name="boton" value="Ingresar"><br>
+	<input type="submit" name="boton" value="Ingresar">
+</form>
+
+</body>
+</html>
+
