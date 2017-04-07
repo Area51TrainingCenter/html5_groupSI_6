@@ -36,32 +36,101 @@
 		input:-moz-placeholder { /* Firefox 18- */
 		  color: #1e1e1e;
 		}
+
+		form {
+			font-family: Verdana;
+			font-size: 16px;
+			width:180px;
+			margin: 50px auto;
+		}
+
+		input[type="text"], 
+		input[type="email"], 
+		input[type="password"],
+		input[type="date"],
+		input[type="number"],
+		select {
+			border:0;
+			border-bottom: 1px solid black;
+			width: 180px;
+			line-height: 30px;
+			outline: none;
+		}
+
+
 	</style>
 </head>
 <body>
 
 <form>
-	<input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" value="Sergio Hidalgo" /><br>
-	<input type="password" name="contrasena" id="contrasena" / placeholder="Ingrese su correo"><br>
-	<input type="date" name="fecha" id="fecha"/><br>
-	<input type="email" name="correo" id="correo" placeholder="Ingrese su correo" /><br>
-	<input type="number" name="hijos" id="hijos"/><br>
-	<input type="color" name="color" id="color"/><br>
-	<input type="range" min="10" max="100" name="rango" id="rango"/><br>
-	<select name="estado" id="estado">
-		<option value="1">Casado</option>
-		<option value="2">Soltero</option>
-		<option value="3">Divorciado</option>
-		<option value="4">Viudo</option>
-	</select>
-	<input type="checkbox" name="acepto" id="acepto">
-	<label for="acepto">Acepto los términos</label>
-	<input type="radio" name="sexo" id="hombre"><label for="hombre">Hombre</label>
-	<input type="radio" name="sexo" id="mujer"><label for="mujer">Mujer</label>
-	<br>
-	<input type="file" name="archivo" id="archivo"><br>
-	<input type="button" name="boton" value="Ingresar"><br>
-	<input type="submit" name="boton" value="Ingresar">
+	<div class="linea">
+		<input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" value="Sergio Hidalgo" required />
+	</div>
+
+	<div class="linea">
+		<input type="password" name="contrasena" id="contrasena" / placeholder="Ingrese su contraseña" required>
+	</div>
+
+	<div class="linea">
+		<input type="date" name="fecha" id="fecha"/>
+	</div>
+
+	<div class="linea">
+		<input type="email" name="correo" id="correo" placeholder="Ingrese su correo" required />
+	</div>
+
+	<div class="linea">
+		<textarea rows="20 cols="10"></textarea>
+	</div>
+	<div class="linea">
+		<input type="number" name="hijos" id="hijos"/>
+	</div>
+
+	<div class="linea">
+		<input type="color" name="color" id="color"/>
+	</div>
+
+	<div class="linea">
+		<input type="range" min="10" max="100" name="rango" id="rango"/>
+	</div>
+
+	<div class="line">
+		<select name="estado" id="estado">
+			<option value="1">Casado</option>
+			<option value="2">Soltero</option>
+			<option value="3">Divorciado</option>
+			<option value="4">Viudo</option>
+		</select>
+	</div>
+	
+
+	<div class="linea">
+		<select name="estado" id="estado">
+			<option value="1">Casado</option>
+			<option value="2">Soltero</option>
+			<option value="3">Divorciado</option>
+			<option value="4">Viudo</option>
+		</select>
+	</div>
+
+	<div class="linea">
+		<input type="checkbox" name="acepto" id="acepto" checked="true"><label for="acepto">Acepto los términos</label>
+	</div>
+	<div class="sexo">
+		<input type="radio" name="sexo" id="hombre"><label for="hombre">Hombre</label>
+		<input type="radio" name="sexo" id="mujer"><label for="mujer">
+		<label for="mujer">Mujer</label>
+	</div>
+	
+	<div class="linea">
+		<input type="file" name="archivo" id="archivo">
+	</div>
+
+	<div class="linea">
+	<input type="button" name="boton" value="Ingresar">
+	<input type="submit" name="boton" value="Ingresar">		
+
+	</div>
 </form>
 
 </body>
