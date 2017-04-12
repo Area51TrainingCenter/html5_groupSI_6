@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="js/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="js/assets/owl.theme.default.min.css">
+	<style>
+		body {
+			background-color: yellow;
+		}
+		div.miSlider {
+			height: 300px;
+			background-color: green;
+			font-family: Verdana;
+			font-size: 30px;
+			color: white;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<div class="owl-carousel owl-theme">
+	    <div class="miSlider" data-merge="1"><h2>1</h2></div>
+	    <div class="miSlider" data-merge="2"><h2>2</h2></div>
+	    <div class="miSlider" data-merge="1"><h2>3</h2></div>
+	    <div class="miSlider" data-merge="3"><h2>4</h2></div>
+	    <div class="miSlider" data-merge="6"><h2>6</h2></div>
+	    <div class="miSlider" data-merge="2"><h2>7</h2></div>
+	    <div class="miSlider" data-merge="1"><h2>8</h2></div>
+	    <div class="miSlider" data-merge="3"><h2>9</h2></div>
+	    <div class="miSlider"><h2>10</h2></div>
+	    <div class="miSlider"><h2>11</h2></div>
+	    <div class="miSlider" data-merge="2"><h2>12</h2></div>
+	    <div class="miSlider"><h2>13</h2></div>
+	    <div class="miSlider"><h2>14</h2></div>
+	    <div class="miSlider"><h2>15</h2></div>
+	</div>
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/owl.carousel.js"></script>
+
+	<script>
+		$(function(){
+
+			$(".owl-carousel").owlCarousel({
+				items:5,
+			    loop:true,
+			    margin:10,
+			    merge:true,
+			    responsive:{
+			        678:{
+			            mergeFit:true
+			        },
+			        1000:{
+			            mergeFit:false
+			        }
+			    }
+			})
+
+		})
+	</script>
+
+</body>
+</html>

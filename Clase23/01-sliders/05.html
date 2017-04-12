@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="js/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="js/assets/owl.theme.default.min.css">
+	<style>
+		body {
+			background-color: yellow;
+		}
+		div.miSlider {
+			height: 300px;
+			background-color: green;
+			font-family: Verdana;
+			font-size: 30px;
+			color: white;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<div class="owl-carousel owl-theme">
+		<div class="miSlider"> Your Content </div>
+	  	<div class="miSlider"> Your Content </div>
+	  	<div class="miSlider"> Your Content </div>
+	  	<div class="miSlider"> Your Content </div>
+	  	<div class="miSlider"> Your Content </div>
+	  	<div class="miSlider"> Your Content </div>
+	  	<div class="miSlider"> Your Content </div>
+	</div>
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/owl.carousel.js"></script>
+
+	<script>
+		$(function(){
+
+			$(".owl-carousel").owlCarousel({
+				loop: true, //hace que el movimiento de sliders sea infinito
+				margin: 10, //crea una separación de 10px entre los sliders
+				nav: true,
+				// responsiveClass:true,
+				center: true, //centra un slider. Suponiendo que la cantidad de sliders es par
+			    items: 3,
+			    /*responsive: {
+			        0:{
+			            items:1
+			        },
+			        600:{
+			            items:3
+			        },
+			        1000:{
+			            items:4
+			        }
+			    }*/
+			})
+
+		})
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="js/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="js/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="animate.css">
+	<style>
+		body {
+			background-color: yellow;
+		}
+		div.miSlider {
+			height: 300px;
+			background-color: green;
+			font-family: Verdana;
+			font-size: 30px;
+			color: white;
+			font-weight: bold;
+		}
+
+		h4 {
+			background-color: red
+		}
+
+	</style>
+</head>
+<body>
+<div class="owl-carousel owl-theme">
+    <div class="miSlider" data-hash="1"><h4 class="animated">1</h4></div>
+    <div class="miSlider" data-hash="2"><h4 class="animated">2</h4></div>
+    <div class="miSlider" data-hash="3"><h4 class="animated">3</h4></div>
+    <div class="miSlider" data-hash="4"><h4 class="animated">4</h4></div>
+    <div class="miSlider" data-hash="5"><h4 class="animated">5</h4></div>
+    <div class="miSlider" data-hash="6"><h4 class="animated">6</h4></div>
+    <div class="miSlider" data-hash="7"><h4 class="animated">7</h4></div>
+    <div class="miSlider" data-hash="8"><h4 class="animated">8</h4></div>
+    <div class="miSlider" data-hash="9"><h4 class="animated">9</h4></div>
+    <div class="miSlider" data-hash="10"><h4 class="animated">10</h4></div>
+    <div class="miSlider" data-hash="11"><h4 class="animated">11</h4></div>
+    <div class="miSlider" data-hash="12"><h4 class="animated">12</h4></div>
+    <div class="miSlider" data-hash="13"><h4 class="animated">13</h4></div>
+    <div class="miSlider" data-hash="14"><h4 class="animated">14</h4></div>
+</div>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/owl.carousel.js"></script>
+
+	<script>
+		$(function(){
+			var slider = 0
+
+			// No olvidar agregar el atributo "data-hash"
+			var owl = $(".owl-carousel")
+			owl.owlCarousel({
+		        items:4,
+		        loop:false,
+		        center:true,
+		        margin:10,
+		        URLhashListener:true,
+		        autoplayHoverPause:true,
+		        startPosition: 'URLHash'			
+			})
+
+			owl.on("translated.owl.carousel", function(evt) {
+				slider = evt.item.index
+
+				if(slider == 3) {
+					$(".miSlider").eq(3).find("h4").addClass("bounce")
+				}
+
+
+			})
+
+			owl.on("changed.owl.carousel", function(evt) {
+				if(slider==1){
+
+				}
+
+				if(slider==3){
+					$(".miSlider").eq(3).find("h4").removeClass("bounce")
+				}
+
+			})
+
+		})
+	</script>
+
+</body>
+</html>
